@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:minWidth="100dp"
+  android:minHeight="100dp"
+  android:gravity="center"
+  android:background="#10ffffff"
+  >
+  
+  
+   <ProgressBar android:id="@+id/progress_wbimg_load"
+ 	 style="@style/myProgressStyle"
+  	 android:layout_width="30px"
+  	 android:layout_height="30px"
+   />
+  <ImageView android:id="@+id/img_weibo_img"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:visibility="gone"
+	  android:scaleType="fitXY"
+	  />
+  
+   <Button android:id="@+id/btn_big"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:background="@drawable/icon_find"
+	  android:layout_alignParentRight="true"
+	  android:layout_alignParentBottom="true"
+	  android:visibility="gone"/>
+ 
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ListView 底部“更多” -->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:background="@drawable/wb_item_bg">
+  
+  
+  
+   <TextView android:id="@+id/txt_more"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="@string/more"
+      android:textSize="20sp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+     />
+  
+  
+  <LinearLayout android:id="@+id/llyt_loading"
+  	  android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:visibility="gone">
+      
+  	<ProgressBar android:id="@+id/progress_more"
+ 	 style="@style/myProgressStyle"
+  	 android:layout_width="30px"
+  	 android:layout_height="30px"
+  	 android:layout_centerVertical="true"
+  	 android:layout_toRightOf="@id/txt_more"
+   />
+   
+  	 <TextView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+       android:textSize="20sp"
+      android:text="@string/loading"
+     
+     />
+  	
+  </LinearLayout>
+  
+  
+  
+</RelativeLayout>
